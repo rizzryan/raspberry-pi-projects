@@ -11,7 +11,7 @@ while True:
     date = currentDT.strftime("%m/%d/%Y")
     time = currentDT.strftime("%I:%M:%S %p")
 
-    temp = round(t, 1)
+    temp = round(temp, 1)
     p = round(p, 1)
     h = round(h, 1)
 
