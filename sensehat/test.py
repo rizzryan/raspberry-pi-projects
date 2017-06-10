@@ -1,12 +1,13 @@
 import datetime
 from sense_hat import SenseHat
 sense = SenseHat()
-currentDT = datetime.datetime.now()
+
 
 while True:
     temp = sense.get_temperature()
     p = sense.get_pressure()
     h = sense.get_humidity()
+    currentDT = datetime.datetime.now()
     date = currentDT.strftime("%m/%d/%Y")
     time = currentDT.strftime("%I:%M:%S %p")
 
