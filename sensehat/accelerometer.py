@@ -3,7 +3,7 @@ from sense_hat import SenseHat
 sense = SenseHat()
 
 while True:
-	acceleration = sense.get_acceleration_raw()
+	acceleration = sense.get_accelerometer_raw()
 	x = acceleration['x']
 	y = acceleration['y']
 	z = acceleration['z']
